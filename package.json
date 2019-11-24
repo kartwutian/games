@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wifi-start": "apicloud wifiStart --port 23456",
+    "wifi-stop": "apicloud wifiStop --port 23456",
+    "wifi-sync": "apicloud wifiSync --project ./2048 --updateAll false --port 23456",
+    "wifi-log": "apicloud wifiLog --port 23456"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "apicloud-cli": "^0.2.0",
     "website-scraper": "^4.2.0"
-  }
+  },
+  "dependencies": {}
 }
